@@ -1,4 +1,4 @@
-
+  
 .headerContainer
   display: flex
   flex-direction: column
@@ -32,6 +32,7 @@
       font-size: 14px
       font-weight: 400
       margin-bottom: 10px
+      cursor: pointer
 
       &:hover
         color: white
@@ -39,12 +40,16 @@
 
     .leftNav
       display: flex
+      align-items: baseline
       @media(max-width: 750px)
         align-items: center
         flex-direction: column
 
       .nav
         display: flex
+        align-items: center
+        text-transform: uppercase
+
 
         ul
           margin: 0
@@ -152,19 +157,24 @@
       .emailIcon
         padding: 0 15px
         border-right: 1px solid #ebebeb
+        cursor: pointer
 
       .userInfo
         display: flex
+        position: relative
         justify-content: center
         align-items: center
         padding: 0 15px
         border-right: 1px solid #ebebeb
+        height: 100%
+        cursor: pointer
 
         &:hover
           ul
             display: block
             position: absolute
-            top: 45px
+            top: 100%
+            left: 0
 
         ul
           border: 1px solid #eee
@@ -177,6 +187,8 @@
 
           li
             text-align: left
+            cursor: pointer
+            
 
             &:hover
               background: #f9fafb
@@ -186,6 +198,8 @@
               padding: 5px 15px
               color: #333
               font-size: 16px
+              width: 100%
+              vertical-align: middle
 
         img
           width: 20px
@@ -224,10 +238,15 @@
         padding: 0 5px
         margin-left: 0
 
+      a
+        text-decoration: none
+        color: #337ab7
+
       span
         color: #337ab7
         font-size: 14px
         margin-left: 10px
+        text-decoration: none
         @media(max-width: 360px)
           font-size: 12px
 

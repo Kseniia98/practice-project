@@ -28,7 +28,7 @@ class Header extends React.Component {
           <>
             <div className={styles.userInfo}>
               <img
-                src={this.props.data.avatar === 'anon.png' ? CONSTANTS.ANONYM_IMAGE_PATH : `${CONSTANTS.publicURL}${this.props.data.avatar}`}
+                src={this.props.data.avatar === 'anon.png' ? `${CONSTANTS.ANONYM_IMAGE_PATH}` : `${CONSTANTS.publicURL}${this.props.data.avatar}`}
                 alt="user"
               />
               <span>{`Hi, ${this.props.data.displayName}`}</span>
@@ -87,8 +87,10 @@ class Header extends React.Component {
           </div>
           <div className={styles.loginSignnUpHeaders}>
             <div className={styles.numberContainer}>
-              <img src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`} alt="phone" />
-              <span>(877)&nbsp;355-3585</span>
+              <a href="tel:8773553585">
+                <img src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`} alt="phone" />
+                <span>(877)&nbsp;355-3585</span>
+              </a>
             </div>
             <div className={styles.userButtonsContainer}>
               {this.renderLoginButtons()}
@@ -138,7 +140,7 @@ class Header extends React.Component {
                         <a href="http://www.google.com">
                             BECOME A
                             CREATIVE
-</a>
+                        </a>
                       </li>
                     </ul>
                   </li>
@@ -170,7 +172,7 @@ class Header extends React.Component {
                         <a href="http://www.google.com">
                             SELL YOUR
                             DOMAINS
-</a>
+                        </a>
                       </li>
                     </ul>
                   </li>
