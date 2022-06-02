@@ -6,7 +6,6 @@ import CONSTANTS from '../../constants';
 import SlideBar from '../../components/SlideBar/SlideBar';
 import Footer from '../../components/Footer/Footer';
 import styles from './Home.module.sass';
-import newStyles from './Home_new.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 
@@ -66,7 +65,7 @@ const Home = (props) => {
                     name ideas from world's largest community of naming experts.
                     With 75,000+ creatives and 15,000+ successful naming projects,
                     Squadhelp is by far the largest naming platform across the globe .
-</p>
+                  </p>
                 </div>
                 <div className={styles.card}>
                   <img
@@ -79,7 +78,7 @@ const Home = (props) => {
                     we ensure that you receive more ideas from our top-quality creatives,
                     and Gamification best practices ensure two-way communication throughout your
                     contest.
-</p>
+                  </p>
                 </div>
                 <div className={styles.card}>
                   <img
@@ -92,7 +91,7 @@ const Home = (props) => {
                     demographics to get unbiased feedback on your favorite names.
                     Also receive Trademark support from our team of Licensed Trademark Attorneys,
                     so you can pick your name with confidence.
-</p>
+                  </p>
                 </div>
               </div>
             </div>
@@ -136,24 +135,39 @@ const Home = (props) => {
               </div>
             </div>
 
-            <div className={newStyles.container_bg}>
-              <div className={newStyles.container}>
-                <h2>Agency Level Experience</h2>
-                <div className={newStyles.cardContainer}>
-                  <div className={newStyles.card}>
-                    <img src={`${CONSTANTS.STATIC_IMAGES_PATH}/icon_1.jpeg`} alt='icon'/>
+            <div className={styles.container__experience__wrap}>
+              <div className={styles.container__experience}>
+                <h2 className={styles.blueUnderline}>Agency Level Experience</h2>
+                <div className={styles.cardContainer__experience}>
+                  <div className={styles.card__experience}>
+                    <img src={`${CONSTANTS.STATIC_IMAGES_PATH}icon_1.jpeg`} alt="globe" />
                     <h3>Managed Contests</h3>
-                    <div>Combine the power of crowdsourcing with the rich experience of our branding consultants. Get a complete agency-level experience. <a href='#'> Learn More.</a></div>
+                    <p>
+                    Combine the power of crowdsourcing with the rich experience of our branding 
+                    consultants. Get a complete agency-level experience. <a href="/">Learn More.</a>
+                    </p>
                   </div>
-                  <div className={newStyles.card}>
-                    <img src={`${CONSTANTS.STATIC_IMAGES_PATH}/icon_2.jpeg`} alt='icon'/>
+                  <div className={styles.card__experience}>
+                    <img
+                      src={`${CONSTANTS.STATIC_IMAGES_PATH}icon_2.jpeg`}
+                      alt="desktop"
+                    />
                     <h3>Audience Testing</h3>
-                    <div>Get unbiased feedback from real people to choose your most important brand elements with confidence! <a href='#'> Learn More.</a></div>
+                    <p>
+                      Get unbiased feedback from real people to choose your most important brand 
+                      elements with confidence! <a href="/">Learn More.</a>
+                    </p>
                   </div>
-                  <div className={newStyles.card}>
-                    <img src={`${CONSTANTS.STATIC_IMAGES_PATH}/icon_3.jpeg`} alt='icon'/>
+                  <div className={styles.card__experience}>
+                    <img
+                      src={`${CONSTANTS.STATIC_IMAGES_PATH}icon_3.jpeg`}
+                      alt="cards"
+                    />
                     <h3>Trademark Support</h3>
-                    <div>Work with our team of experienced licensed trademark attorneys to protect your name, tagline, and logo with the USPTO. <a href='#'> Learn More.</a></div>
+                    <p>
+                      Work with our team of experienced licensed trademark attorneys to protect 
+                      your name, tagline, and logo with the USPTO. <a href="/">Learn More.</a>
+                    </p>
                   </div>
                 </div>
               </div>
