@@ -6,6 +6,7 @@ import CONSTANTS from '../../constants';
 import SlideBar from '../../components/SlideBar/SlideBar';
 import Footer from '../../components/Footer/Footer';
 import styles from './Home.module.sass';
+import newStyles from './Home_new.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 
@@ -134,6 +135,30 @@ const Home = (props) => {
                 </div>
               </div>
             </div>
+
+            <div className={newStyles.container_bg}>
+              <div className={newStyles.container}>
+                <h2>Agency Level Experience</h2>
+                <div className={newStyles.cardContainer}>
+                  <div className={newStyles.card}>
+                    <img src={`${CONSTANTS.STATIC_IMAGES_PATH}/icon_1.jpeg`} alt='icon'/>
+                    <h3>Managed Contests</h3>
+                    <div>Combine the power of crowdsourcing with the rich experience of our branding consultants. Get a complete agency-level experience. <a href='#'> Learn More.</a></div>
+                  </div>
+                  <div className={newStyles.card}>
+                    <img src={`${CONSTANTS.STATIC_IMAGES_PATH}/icon_2.jpeg`} alt='icon'/>
+                    <h3>Audience Testing</h3>
+                    <div>Get unbiased feedback from real people to choose your most important brand elements with confidence! <a href='#'> Learn More.</a></div>
+                  </div>
+                  <div className={newStyles.card}>
+                    <img src={`${CONSTANTS.STATIC_IMAGES_PATH}/icon_3.jpeg`} alt='icon'/>
+                    <h3>Trademark Support</h3>
+                    <div>Work with our team of experienced licensed trademark attorneys to protect your name, tagline, and logo with the USPTO. <a href='#'> Learn More.</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <h2>How Do Name Contest Work?</h2>
             <div className={styles.whiteContainer}>
               <div className={styles.stepReverse}>
